@@ -1,76 +1,103 @@
-⏳ Countdown Timer (Streamlit-Based)
+# ⏳ Countdown Timer
 
-A modern and interactive Countdown Timer built using Python and Streamlit.
-This web-based application allows users to set a timer and watch it count down in real-time.
+A beautiful and interactive Countdown Timer available in two versions — **Streamlit Web App** and **Terminal CLI**.
 
-📌 Features
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-⏱️ User-defined countdown (Minutes & Seconds)
+---
 
-🎨 Modern UI with custom CSS
+## ✨ Features
 
-🔄 Real-time visual countdown
+- ⏱️ Set countdown with **Minutes & Seconds**
+- 🎨 Modern UI with custom CSS styling (Web version)
+- 🔄 Real-time visual countdown with large display
+- 🎈 Balloons animation when timer finishes (Web version)
+- 🛑 Stop timer anytime
+- ⏰ Hours support for long durations (CLI version)
+- 📱 Fully responsive web interface
 
-🎈 Interactive feedback (Balloons & Notifications)
+---
 
-📱 Fully responsive web interface
+## 📂 Project Structure
 
-🛠️ Technologies Used
+```
+Countdown-Timer/
+├── app.py              # Streamlit Web App (main version)
+├── timer_cli.py        # Terminal CLI version
+├── requirements.txt    # Python dependencies
+└── README.md           # Documentation
+```
 
-Python 3
+---
 
-Streamlit (Web Framework)
+## 🚀 How to Run
 
-📂 Project Structure
-countdown-timer/
-│
-├── app.py         # Streamlit application logic
-├── requirements.txt # Project dependencies
-└── README.md      # Documentation
+### Option 1: Streamlit Web Version (Recommended)
 
-⚙️ Requirements
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-Before running this project, make sure you have:
+# Run the app
+streamlit run app.py
+```
 
-Python 3 installed
-Streamlit installed (`pip install streamlit`)
+Opens in your browser at `http://localhost:8501`
 
-🚀 How to Run the Timer
+### Option 2: Terminal / CLI Version
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/countdown-timer.git
-   ```
+```bash
+# No extra dependencies needed
+python timer_cli.py
+```
 
-2. Navigate to the project folder:
-   ```bash
-   cd countdown-timer
-   ```
+Works in any terminal — Windows, macOS, or Linux.
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+---
 
-4. Run the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
+## 🎮 How to Use
 
-🎮 How to Use
+### Web Version
+1. Enter **minutes** and **seconds** using the input fields
+2. Click the **🚀 Start Countdown** button
+3. Watch the timer count down in real-time
+4. When it reaches **00:00**, balloons will appear with a "Time's Up!" message
+5. Click **🛑 Stop Timer** to cancel anytime
 
-1. Enter the minutes and seconds.
-2. Click the "Start Countdown" button.
-3. The timer will display a large visual clock.
-4. When time reaches zero, balloons will appear and a "Time's Up!" message will be shown.
+### CLI Version
+1. Enter **minutes** and **seconds** when prompted
+2. The timer displays a clean countdown in your terminal
+3. Press **Ctrl+C** to stop the timer early
 
-👩‍💻 Author : Fatimah Noman
+---
 
-Python Learner 🚀
-Exploring Agentic AI 🤖
+## 🛠️ Technologies Used
 
-⭐ Support
+| Technology | Purpose |
+|-----------|---------|
+| Python 3 | Core language |
+| Streamlit | Web framework for the UI |
+| HTML/CSS | Custom styling for timer display |
+
+---
+
+## 📋 Requirements
+
+- Python 3.7+
+- Streamlit (`pip install streamlit`)
+
+---
+
+## 👩‍💻 Author
+
+**Fatimah Noman**
+
+Python Learner 🚀 | Exploring Agentic AI 🤖
+
+---
+
+## ⭐ Support
+
 If you like this project, give it a ⭐ on GitHub!
-
-📜 License
-This project is open-source and free to use.
